@@ -21,11 +21,11 @@
 
 To get a local copy up and running follow these simple example steps.
 
-- copy this link `https://github.com/Dinma-Faith/to-doList/`.
+- copy this link `https://github.com/Dinma-Faith/to-doList.git`.
 - get the directory that you want to clone the repository.
 - open the command prompt in this directory.
-- write `git clone https://github.com/Dinma-Faith/Portfolio.git`.
-- go to the repository folder in your command prompt `cd Portfolio`
+- write `git clone https://github.com/Dinma-Faith/to-doList.git`.
+- go to the repository folder in your command prompt `cd to-doList`
 
 
 ## Prerequisites
@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Setup
 
--Clone the git repo using this command: **git clone git@github.com:Dinma-Faith/Portfolio.git**
+-Clone the git repo using this command: **git clone git@github.com:Dinma-Faith/to-doList.git**
 
 ## Run tests
 
