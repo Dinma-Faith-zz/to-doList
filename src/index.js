@@ -5,7 +5,7 @@ const displayPage = document.querySelector('.displayPage');
 const todoList = [
   { id: 0, description: 'Wash the dishes', completed: false },
   { id: 1, description: 'Go to the gym', completed: true },
-  { id: 2,description: 'Eat breakfast', completed: false },
+  { id: 2, description: 'Eat breakfast', completed: false },
   { id: 3, description: 'Go for a walk', completed: true },
 ];
 displayPage.innerHTML = ' ';
