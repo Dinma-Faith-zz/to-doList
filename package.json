@@ -1,0 +1,32 @@
+{
+  "name": "to-dolist",
+  "version": "1.0.0",
+  "description": "## Built With",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "gist",
+    "url": "git+https://github.com/Dinma-Faith/to-doList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dinma-Faith/to-doList/issues"
+  },
+  "homepage": "https://github.com/Dinma-Faith/to-doList#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
