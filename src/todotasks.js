@@ -4,10 +4,10 @@ const showPage = (taskList) => {
   const displayPage = document.querySelector('.displayPage');
 
   displayPage.innerHTML = '';
-  taskList.map((task, index) => {
+  taskList.map((task) => {
     displayPage.innerHTML += `
-<div class="tasktodo"> <input type="checkbox" id= "${index}" ${task.comleted ? 'checked' : 'not'}>
-<input class="entry" id= "update${index}" value= "${task.taskEntry}"><span class="fa-solid fa-trash-can"></span>
+<div class="tasktodo"> <input type="checkbox" id= "${task.index}" ${task.completed ? 'checked' : 'not'}>
+<input class="entry" id= "update${task.index}" value= "${task.taskEntry}"><span class="fa-solid fa-trash-can"></span>
  </div>`;
 
     const clear = document.querySelectorAll('.fa-trash-can');
