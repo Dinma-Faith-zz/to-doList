@@ -32,9 +32,10 @@ body {
   margin-top: 2%;
 }
 
-.description {
+.entry {
   width: calc(100% - 30px);
   margin-left: 10px;
+  border: none;
 }
 
 .tasktodo {
@@ -50,7 +51,7 @@ form {
 
 .fa-plus {
   position: absolute;
-  right: 20px;
+  right: 25px;
   color: #c2cce4;
 }
 
