@@ -4,21 +4,21 @@ export default class Task {
     this.completed = false;
     this.index = 0;
   }
-  
-  addTask(todoList) {
+
+  addTask(taskList) {
     const myTask = new Task(this.taskEntry);
-    myTask.index = todoList.length;
-    todoList.push(myTask);
-    localStorage.setItem('taskDetail', JSON.stringify(todoList));
+    myTask.index = taskList.length;
+    taskList.push(myTask);
+    localStorage.setItem('taskDetail', JSON.stringify(taskList));
   }
-  
-  static delTask(index, todoList) {
-    todoList = todoList.filter((tasks, i) => index !== i);
-    localStorage.setItem('taskDetail', JSON.stringify(todoList));
+
+  static delTask(index, taskList) {
+    taskList = taskList.filter((tasks, i) => index !== i);
+    localStorage.setItem('taskDetail', JSON.stringify(taskList));
     window.location.reload();
-    todoList.forEach((taskindex, i) => {
-    taskindex.index = i;
-    localStorage.setItem('taskDetail', JSON.stringify(taskList)); 
-   });
+    taskList.forEach((taskindex, i) => {
+      taskindex.index = i;
+      localStorage.setItem('taskDetail', JSON.stringify(taskList));
+    });
   }
 }
