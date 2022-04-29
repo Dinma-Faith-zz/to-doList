@@ -4,19 +4,18 @@ import showPage from './todotasks.js';
 
 const addBtn = document.querySelector('.fa-plus');
 
-let todoList = [];
+let taskList = [];
 const textInput = document.getElementById('textInput');
-todoList = JSON.parse(localStorage.getItem('taskDetail')) || [];
-showPage(todoList);
+taskList = JSON.parse(localStorage.getItem('taskDetail')) || [];
+showPage(taskList);
 
 addBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const putTask = new Task(textInput.value);
-  putTask.addTask(todoList);
-  console.log(todoList);
+  putTask.addTask(taskList);
 
   textInput.value = '';
-  showPage(todoList);
+  showPage(taskList);
 });
 
 const edit = document.querySelectorAll('.fa-solid.fa-pen-clip');

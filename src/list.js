@@ -7,7 +7,7 @@ export default class Task {
 
   addTask(taskList) {
     const myTask = new Task(this.taskEntry);
-    myTask.index = taskList.length+1;
+    myTask.index = taskList.length +1;
     taskList.push(myTask);
     localStorage.setItem('taskDetail', JSON.stringify(taskList));
   }
@@ -17,10 +17,11 @@ export default class Task {
     localStorage.setItem('taskDetail', JSON.stringify(taskList));
     window.location.reload();
     taskList.forEach((taskindex, i) => {
-      taskindex.index = i+1;
+      taskindex.index = i +1;
       localStorage.setItem('taskDetail', JSON.stringify(taskList));
     });
   }
+  
   static editTask(taskList, index) {
     taskList[index].taskEntry = document.getElementById(`update${index}`).value;
     localStorage.setItem('taskDetail', JSON.stringify(taskList));
