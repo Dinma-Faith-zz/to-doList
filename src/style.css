@@ -57,13 +57,18 @@ form {
 
 .fa-pen-clip {
   padding-right: 10px;
+  color: #272a31;
+}
+
+.fa-trash-can {
+  color: #272a31;
 }
 
 .clear-items {
   text-align: center;
   font-size: 15px;
-  height: 60px;
-  margin-top: 15px;
+  height: 40px;
+  margin-top: 25px;
 }
 
 .clear-items a {
