@@ -32,19 +32,8 @@ const showPage = (taskList) => {
 
   const clearAll = document.querySelector('.clear-items');
   clearAll.addEventListener('click', () => {
-    const checked1 = document.querySelectorAll('input[type=checkbox]:checked');
-    checked1.forEach((row) => {
-      const x = row.parentNode;
-      const c1 = x.querySelector('.checkbox');
-      console.log(taskList);
-      taskList = taskList.filter((currentlist) => currentlist.index !== Number(c1));
-      localStorage.setItem('taskDetail', JSON.stringify(taskList));
-    });
-
-    taskList.forEach((taskindex, i) => {
-      taskindex.index = i;
-      localStorage.setItem('taskDetail', JSON.stringify(taskList));
-    });
+    taskList = taskList.filter((t) => !t.completed);
+    localStorage.setItem('taskDetail', JSON.stringify(taskList));
     window.location.reload();
   });
   completechecker();
